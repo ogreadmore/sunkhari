@@ -1,1967 +1,520 @@
 <!DOCTYPE html>
-<!-- Change the value of lang="en" attribute if your website's language is not English.
-You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
-<html lang="en">
-    <head>
-        <title>Rhythm &mdash; One & Multi Page Creative Template</title>
-        <meta name="description" content="Rhythm &mdash; One & Multi Page Creative Template">    
-        <meta charset="utf-8">
-        <meta name="author" content="https://themeforest.net/user/bestlooker/portfolio">
-        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <!-- Favicons -->
-        <link rel="shortcut icon" href="images/favicon.png">
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sunkhari - Eco-Friendly Women's Knit Hats</title>
+    <meta name="description" content="Discover Sunkhari's eco-friendly women's knit hats crafted from merino wool, wool blends, recycled materials, cotton, and organic cotton. Shop sustainable, natural headwear that combines comfort, style, and conscious fashion.">
+    <meta name="keywords" content="eco-friendly hats, women's knit hats, merino wool hats, organic cotton hats, sustainable fashion, natural materials, recycled materials">
+    <meta name="author" content="Sunkhari">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-responsive.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">  
-        
-    </head>
-    <body class="appear-animate">
-        
-        <!-- Page Loader -->        
-        <div class="page-loader">
-            <div class="loader">Loading...</div>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="assets/font-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+    
+    
+           @media (max-width: 992px) {
+  .splashy {
+  font-size: 3em
+  line-height: 3;
+  max-width: 300px !important;
+  } 
+
+            }
+
+  .splashy {
+  font-size: 5em
+  line-height: 5;
+  max-width: 400px;
+  }
+  
+             @media (max-width: 992px) {
+  .splashyp {
+color: #000000; font-size: 1em; max-width: 300px !important; line-height: 1;
+
+            }}
+
+  .splashyp {
+color: #000000 !important; font-size: 2em; max-width: 400px; line-height: 1.4;
+  }
+  
+
+
+
+  .fa {
+    width: 100px; /* Icon size */
+    height: 100px;
+    line-height: 100px; /* Centers the icon vertically */
+    display: inline-block; /* Ensures proper spacing and removes underline quirks */
+    text-align: center;
+    text-decoration: none !important; /* Force removes underline */
+    font-size: 48px; /* Icon size inside the circle */
+    color: #333; /* Default icon color */
+    border-radius: 50%; /* Circular icons */
+    background-color: #f0f0f0; /* Background color */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .fa:hover {
+    opacity: 0.7; /* Semi-transparent hover effect */
+    background-color: #ddd; /* Slightly darker background on hover */
+    transform: scale(1.1); /* Enlarges icon slightly on hover */
+  }
+
+  .contact-social a {
+    text-decoration: none !important; /* Absolutely removes underline */
+    border: none; /* Removes outline-like artifacts */
+    outline: none; /* Eliminates focus outlines */
+  }
+
+  .contact-social {
+    display: flex;
+    gap: 15px; /* Adds space between icons */
+  }
+
+
+
+        @media (min-width: 992px) {
+            #header {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background: #fff;
+            }
+
+            /* On desktop, full-height slider minus header */
+            #home.tf-slideshow.slider-home-2 {
+                height: calc(100vh - 80px);
+            }
+        }
+
+        @media (max-width: 991px) {
+            #header {
+                position: relative;
+            }
+
+            /* On mobile, let slider auto-size based on image aspect ratio */
+            #home.tf-slideshow.slider-home-2 {
+                height: auto; 
+            }
+            #home.tf-slideshow.slider-home-2 .wrap-slider {
+                height: auto;
+            }
+        }
+
+        .nav-icon { display: none !important; }
+
+        .offcanvas.offcanvas-start.canvas-mb #wrapper-menu-navigation a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .offcanvas.offcanvas-start.canvas-mb #wrapper-menu-navigation a:hover {
+            background-color: #f0f0f0;
+            color: #666;
+        }
+
+        /* Remove brand/store section */
+        section.flat-spacing-1.wow.fadeIn {
+            display: none !important;
+        }
+
+        .footer-infor, .footer-col-block, .footer-newsletter, .tf-cur {
+            display: none !important;
+        }
+
+        .footer-custom-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .footer-col {
+            flex: 1 1 20%;
+            min-width: 200px;
+        }
+        .footer-col h6 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .footer-col ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-sales {
+            color: #333;
+            line-height: 1.5;
+        }
+        .footer-sales h6 { margin-bottom: 10px; }
+
+        /* Remove icons from buttons */
+        .tf-btn i,
+        button i {
+            display: none !important;
+        }
+
+        /* About section: 3 cols */
+        #about .row > div p {
+            margin-bottom: 0;
+        }
+
+        /* Contact section 2 cols */
+        #contact .contact-left {
+            padding-right: 30px;
+        }
+        .contact-social a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .contact-social a:hover {
+            text-decoration: underline;
+        }
+
+        /* Slider text overlay and spacing */
+        .box-content {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            color: #fff;
+            text-align: left;
+            z-index: 10;
+        }
+
+        /* Pagination at bottom center */
+        .wrap-pagination.sw-absolute-2 {
+            position: absolute;
+            z-index: 20;
+            bottom: 20px; 
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sw-dots.sw-pagination-slider.swiper-pagination .swiper-pagination-bullet {
+            background: #000 !important;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin: 0 5px;
+            border-radius: 50%;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .sw-dots.sw-pagination-slider.swiper-pagination .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+		.progress-wrap::after {display: none;}
+
+        /* gotop: simple up arrow */
+        .progress-wrap {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .progress-wrap svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0; /* Hide the animated path */
+        }
+    </style>
+</head>
+
+<body class="preload-wrapper">
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header" class="header-default">
+        <div class="px_15 lg-px_40">
+            <div class="row wrapper-header align-items-center">
+                <div class="col-md-4 col-3 tf-lg-hidden">
+                    <a href="#mobileMenu" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none">
+                            <path d="M2.00056 2.28571H16.8577C17.1608 2.28571 17.4515 2.16531 17.6658 1.95098C17.8802 1.73665 18.0006 1.44596 18.0006 1.14286C18.0006 0.839753 17.8802 0.549063 17.6658 0.334735C17.4515 0.120408 17.1608 0 16.8577 0H2.00056C1.69745 0 1.40676 0.120408 1.19244 0.334735C0.978109 0.549063 0.857702 0.839753 0.857702 1.14286C0.857702 1.44596 0.978109 1.73665 1.19244 1.95098C1.40676 2.16531 1.69745 2.28571 2.00056 2.28571ZM0.857702 8C0.857702 7.6969 0.978109 7.40621 1.19244 7.19188C1.40676 6.97755 1.69745 6.85714 2.00056 6.85714H22.572C22.8751 6.85714 23.1658 6.97755 23.3801 7.19188C23.5944 7.40621 23.7148 7.6969 23.7148 8C23.7148 8.30311 23.5944 8.59379 23.3801 8.80812C23.1658 9.02245 22.8751 9.14286 22.572 9.14286H2.00056C1.69745 9.14286 1.40676 9.02245 1.19244 8.80812C0.978109 8.59379 0.857702 8.30311 0.857702 8ZM0.857702 14.8571C0.857702 14.554 0.978109 14.2633 1.19244 14.049C1.40676 13.8347 1.69745 13.7143 2.00056 13.7143H12.2863C12.5894 13.7143 12.8801 13.8347 13.0944 14.049C13.3087 14.2633 13.4291 14.554 13.4291 14.8571C13.4291 15.1602 13.3087 15.4509 13.0944 15.6653C12.8801 15.8796 12.5894 16 12.2863 16H2.00056C1.69745 16 1.40676 15.8796 1.19244 15.6653C0.978109 15.4509 0.857702 15.1602 0.857702 14.8571Z" fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-md-4 col-6">
+                    <a href="#home" class="logo-header">
+                        <img src="assets/logo.svg" alt="Sunkhari Logo" class="logo">
+                    </a>
+                </div>
+                <div class="col-xl-6 tf-md-hidden">
+                    <nav class="box-navigation text-center">
+                        <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
+                            <li class="menu-item"><a href="#home" class="item-link">Home</a></li>
+                            <li class="menu-item"><a href="#about" class="item-link">About</a></li>
+                            <li class="menu-item"><a href="#shop" class="item-link">Shop</a></li>
+                            <li class="menu-item"><a href="#contact" class="item-link">Say Hello</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-md-4 col-3"></div>
+            </div>
         </div>
-        <!-- End Page Loader -->
+    </header>
+    <!-- /Header -->
 
-        <!-- Skip to Content -->
-        <a href="#main" class="btn skip-to-content">Skip to Content</a>
-        <!-- End Skip to Content -->
-        
-        <!-- Page Wrap -->
-        <div class="page" id="top">
-            
-            <!-- Navigation panel -->
-            <nav class="main-nav dark transparent stick-fixed">
-                <div class="full-wrapper relative clearfix">
-                    
-                    <!-- Logo ( * your text or image into link tag *) -->
-                    <div class="nav-logo-wrap local-scroll">
-                        <a href="intro.html" class="logo">
-                            <img src="images/logo-white.png" alt="Company logo" />
+<!-- Slider -->
+<div id="home" class="tf-slideshow slider-home-2 slider-effect-fade position-relative">
+    <!-- 9 seconds delay and 1 second transition speed -->
+    <div dir="ltr" class="swiper tf-sw-slideshow" 
+         data-preview="1" 
+         data-tablet="1" 
+         data-mobile="1" 
+         data-centered="false" 
+         data-space="0" 
+         data-loop="true" 
+         data-auto-play="true"  
+         data-speed="1000"
+         data-delay="4000"            
+         data-effect="fade">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrap-slider">
+                    <img src="assets/fashion-slideshow-06.jpg" alt="Sunkhari eco-friendly hats">
+                    <div class="box-content">
+                        <div class="container">
+                            <h1 class="splashy">Sustainable Beauty</h1>
+                            <p class="splashyp">
+                                Celebrate the art of sustainable, artisanal knitwear made with care, quality, and a focus on natural beauty.
+                            </p>
+                            <a href="https://www.etsy.com" class="tf-btn btn-fill animate-hover-btn btn-xl radius-3">Shop Sustainable Hats</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrap-slider">
+                    <img src="assets/fashion-slideshow-07.jpg" alt="Sunkhari eco-friendly hats">
+                    <div class="box-content">
+                        <div class="container">
+                            <h1 class="splashy">Timeless Fashion</h1>
+                            <p class="splashyp">
+                                Elevate your style with beautiful handmade knitwear, made with sustainable and natural materials.
+                            </p>
+                            <a href="https://www.etsy.com" class="tf-btn btn-fill animate-hover-btn btn-xl radius-3">Shop Timeless Hats</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <!-- Pagination at bottom center (if any) -->
+    </div>
+</div>
+<!-- /Slider -->
+
+
+    <!-- About Section -->
+    <section id="about" class="flat-spacing-8" style="margin-top: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 style="font-size: 3em; line-height: 1.2; padding: 20px;">Eco-Friendly Women's Knit Hats by Sunkhari</h1>
+                </div>
+                <div class="col-md-4">
+                    <p style="font-size: 1.4em; line-height: 1.4; padding: 20px;"><strong>Alisha Bhattarai,</strong> the creative soul behind Sunkhari, recently moved from the vibrant streets of Nepal to the USA. A maker at heart, Alisha loves nothing more than knitting and dreaming up designs for cozy, eco-friendly hats and accessories. Whether she’s experimenting with new patterns or enjoying a quiet moment with her knitting needles and a cup of chai, her passion for crafting shines through in everything she creates.</p>
+                </div>
+                <div class="col-md-4">
+                   <p style="font-size: 1.4em; line-height: 1.4; padding: 20px;">At Sunkhari, we focus on using natural, renewable materials and thoughtful production methods because Alisha believes fashion should feel as good as it looks. Each piece is a blend of playful style and everyday comfort, designed to bring a little warmth and happiness to your day. With every hat or accessory, you’re not just wearing something handmade; you’re sharing in the positive energy that is put into every Sunkhari product.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="flat-spacing-8">
+        <div class="container-full">
+            <div class="masonry-layout">
+                <div class="item-1 collection-item large hover-img wow fadeInUp">
+                    <div class="collection-inner">
+                        <a href="https://www.etsy.com" class="collection-image img-style rounded-0">
+                            <img src="assets/collection-21.jpg" alt="cotton hats">
                         </a>
+                        <div class="collection-content">
+                            <a href="https://www.etsy.com" class="tf-btn collection-title hover-icon"><span>Cotton / Cotton Blend Hats</span></a>
+                        </div>
                     </div>
-                    
-                    <div class="mobile-nav" role="button" tabindex="0">
-                        <i class="fa fa-bars"></i>
-                        <span class="sr-only">Menu</span>
-                    </div>
-                    
-                    <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav">
-                        <ul class="clearlist">
-                            
-                            <!-- Item With Sub -->
-                            <li>
-                                <a href="#" class="mn-has-sub active">Home <i class="fa fa-angle-down"></i></a>
-                                
-                                <!-- Sub Multilevel -->
-                                <ul class="mn-sub mn-has-multi">
-                                    
-                                    <!-- Sub Column -->
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">Multi Page</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="mp-index.html">Main Demo</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-01.html">Image Parallax 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-02.html">Image Parallax 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-03.html">Image Parallax 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-04.html">Image Parallax 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-06.html">Image Parallax 5</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-12.html">Fullwidth Image</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-05.html">Text Rotator</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-07.html">Slider Fullscreen</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-08.html">Slider Zoom Effect</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-09.html">Slider Fullwidth</a>
-                                            </li>
-                                            
-                                            
-                                        </ul>
-                                        
-                                    </li>
-                                    <!-- End Sub Column -->
-                                    
-                                    <!-- Sub Column -->
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">&nbsp;</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="mp-index-10.html">Slider Background</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-17.html">Slider Revolution 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-18.html">Slider Revolution 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-20.html">Content Slider</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-11.html">With Play Button</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-13.html">BG Video Fullwidth</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-14.html">BG Video Fullscreen 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-15.html">BG Video Fullscreen 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-19.html">BG HTML5 Video (local)</a>
-                                            </li>
-                                            <li>
-                                                <a href="mp-index-16.html">Agency Header</a>
-                                            </li>
-                                            <li>
-                                                <a href="intro.html#special-demos">Special Demos <span class="label-new round">New</span></a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    <!-- End Sub Column -->
-                                    
-                                    
-                                    <!-- Sub Column -->
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">One Page</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="index.html">Main Demo</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-01.html">Image Parallax 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-02.html">Image Parallax 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-03.html">Image Parallax 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-04.html">Image Parallax 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-06.html">Image Parallax 5</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-12.html">Fullwidth Image</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-05.html">Text Rotator</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-07.html">Slider Fullscreen</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-08.html">Slider Zoom Effect</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-09.html">Slider Fullwidth</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    <!-- End Sub Column -->
-                                    
-                                    <!-- Sub Column -->
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">&nbsp;</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="index-10.html">Slider Background</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-17.html">Slider Revolution 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-18.html">Slider Revolution 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-20.html">Content Slider</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-11.html">With Play Button</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-13.html">BG Video Fullwidth</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-14.html">BG Video Fullscreen 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-15.html">BG Video Fullscreen 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-19.html">BG HTML5 Video (local)</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-16.html">Agency Header</a>
-                                            </li>
-                                            <li>
-                                                <a href="intro.html#special-demos">Special Demos <span class="label-new round">New</span></a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    <!-- End Sub Column -->
-                                    
-                                </ul>
-                                <!-- End Sub Multilevel -->
-                                
-                            </li>
-                            <!-- End Item With Sub -->
-                            
-                            <!-- Item With Sub -->
-                            <li>
-                                <a href="#" class="mn-has-sub">Pages <i class="fa fa-angle-down"></i></a>
-                                
-                                <!-- Sub Multilevel -->
-                                <ul class="mn-sub mn-has-multi">
-                                    
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">Group 1</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="pages-about-1.html">About Us 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-about-2.html">About Us 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-about-3.html">About Us 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-services-1.html">Services 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-services-2.html">Services 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-services-3.html">Services 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-clients.html">Clients</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-landing.html">Landing Page</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">Group 2</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="pages-team-1.html">Team 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-team-2.html">Team 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-faq-1.html">FAQ 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-faq-2.html">FAQ 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-pricing-1.html">Pricing 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-pricing-2.html">Pricing 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-contact-1.html">Contact 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-contact-2.html">Contact 2</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li class="mn-sub-multi">
-                                        <a class="mn-group-title">Group 3</a>
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="pages-gallery-1col.html">Gallery Col 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-gallery-2col.html">Gallery Col 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-gallery-3col.html">Gallery Col 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-gallery-4col.html">Gallery Col 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-gallery-6col.html">Gallery Col 6</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-account.html">Login / Register</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-under-construction.html">Under Construction</a>
-                                            </li>
-                                            <li>
-                                                <a href="pages-404.html">Error 404</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                
-                                </ul>
-                                <!-- End Sub Multilevel -->
-                                
-                            </li>
-                            <!-- End Item With Sub -->
-                            
-                            <!-- Item With Sub -->
-                            <li>
-                                <a href="#" class="mn-has-sub">Elements <i class="fa fa-angle-down"></i></a>
-                                
-                                <!-- Sub Multilevel -->
-                                <ul class="mn-sub mn-has-multi">
-                                    
-                                    <li class="mn-sub-multi">
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="elements-accordions.html"><i class="fa fa-plus-circle fa-sm"></i> Accordions</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-bars.html"><i class="fa fa-tachometer fa-sm"></i> Bars (Progress)</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-features.html"><i class="fa fa-th-large fa-sm"></i> Features Box</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-forms.html"><i class="fa fa-align-justify fa-sm"></i> Form Fields</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-grid.html"><i class="fa fa-th fa-sm"></i> Grid</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-icons-et.html"><i class="fa fa-heart-o fa-sm"></i> Icons Et-line</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-icons-fe.html"><i class="fa fa-heart fa-sm"></i> Icons Font Awesome</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-images-lazyload.html"><i class="fa fa-spinner fa-sm"></i> Images Lazyload</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-messages.html"><i class="fa fa-comment fa-sm"></i> Messages</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li class="mn-sub-multi">
-                                        
-                                        <ul>
-                                            <li>
-                                                <a href="elements-page-titles.html"><i class="fa fa-header fa-sm"></i> Page Titles</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-sliders.html"><i class="fa fa-chevron-circle-right fa-sm"></i> Sliders</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-sliders-lazyload.html"><i class="fa fa-chevron-circle-right fa-sm"></i> Sliders Lazyload</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-tabs.html"><i class="fa fa-columns fa-sm"></i> Tabs</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-typography.html"><i class="fa fa-font fa-sm"></i> Typography</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-video-sound.html"><i class="fa fa-youtube-play fa-sm"></i> Video / Sound</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-header-dark.html"><i class="fa fa-header fa-sm"></i> Header Dark</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-header-dark-transparent.html"><i class="fa fa-header fa-sm"></i> Header Dark Transp</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-header-white.html"><i class="fa fa-header fa-sm"></i> Header White</a>
-                                            </li>
-                                            <li>
-                                                <a href="elements-header-white-transparent.html"><i class="fa fa-header fa-sm"></i> Header White Transp</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                
-                                </ul>
-                                <!-- End Sub Multilevel -->
-                                
-                            </li>
-                            <!-- End Item With Sub -->
-                            
-                            <!-- Item With Sub -->
-                            <li>
-                                <a href="#" class="mn-has-sub">Portfolio <i class="fa fa-angle-down"></i></a>
-                                
-                                <!-- Sub -->
-                                <ul class="mn-sub">
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Boxed <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-boxed-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Boxed (Gutter) <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-boxed-gutter-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-gutter-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-gutter-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-gutter-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-gutter-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Boxed (Titles) <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-boxed-titles-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-titles-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-titles-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-titles-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-boxed-titles-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Wide <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-wide-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Wide (Gutter) <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-wide-gutter-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-gutter-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-gutter-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-gutter-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-gutter-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Wide (Titles) <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-wide-titles-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-titles-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-titles-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-titles-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-wide-titles-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Masonry <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-masonry-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-masonry-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-masonry-4col.html">4 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-masonry-5col.html">5 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-masonry-blackhover.html">Black Hovers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Single <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="portfolio-single-1.html">Single 1</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-single-2.html">Single 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-single-3.html">Single 3</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-single-4.html">Single 4</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-single-5.html">Single 5</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="portfolio-parallax.html">Parallax</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="portfolio-promo.html">Promo</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="portfolio-lazyload.html">Lazyload</a>
-                                    </li>
-                                    
-                                </ul>
-                                <!-- End Sub -->
-                                
-                            </li>
-                            <!-- End Item With Sub -->
-                            
-                            <!-- Item With Sub -->
-                            <li>
-                                <a href="#" class="mn-has-sub">Blog <i class="fa fa-angle-down"></i></a>
-                                
-                                <!-- Sub -->
-                                <ul class="mn-sub">
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Classic <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="blog-classic-sidebar-left.html">Sidebar Left</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-classic-sidebar-right.html">Sidebar Right</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-classic-fullwidth.html">Fullwidth</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Columns <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="blog-columns-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-columns-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-columns-4col.html">4 Columns</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Masonry <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="blog-masonry-2col.html">2 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-masonry-3col.html">3 Columns</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-masonry-4col.html">4 Columns</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" class="mn-has-sub">Single <i class="fa fa-angle-right right"></i></a>
-                                    
-                                        <ul class="mn-sub">
-                                            <li>
-                                                <a href="blog-single-sidebar-left.html">Sidebar Left</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-single-sidebar-right.html">Sidebar Right</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-single-fullwidth.html">Fullwidth</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </li>
-                                    
-                                    
-                                </ul>
-                                <!-- End Sub -->
-                                
-                            </li>
-                            <!-- End Item With Sub -->
-                            
-                            <!-- Item With Sub -->
-                            <li>
-                                <a href="#" class="mn-has-sub">Shop <i class="fa fa-angle-down"></i></a>
-                                
-                                <!-- Sub -->
-                                <ul class="mn-sub to-left">
-                                    
-                                    <li>
-                                        <a href="shop-columns-2col.html">2 Columns</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop-columns-3col.html">3 Columns</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop-columns-4col.html">4 Columns</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop-single.html">Single Product</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop-cart.html">Shopping Cart</a>
-                                    </li>
-                                    
-                                </ul>
-                                <!-- End Sub -->
-                                
-                            </li>
-                            <!-- End Item With Sub -->
-                            
-                            <!-- Divider -->
-                            <li><a>&nbsp;</a></li>
-                            <!-- End Divider -->
-                            
-                            <!-- Search -->
-                            <li>
-                                <a href="#" class="mn-has-sub"><i class="fa fa-search"></i> Search</a>
-                                
-                                <ul class="mn-sub">
-                                    
-                                    <li>
-                                        <div class="mn-wrap">
-                                            <form method="post" class="form">
-                                                <div class="search-wrap">
-                                                    <input type="text" class="form-control search-field" placeholder="Search...">
-                                                    <button class="search-button animate" type="submit" title="Start Search">
-                                                        <i class="fa fa-search"></i>
-                                                    </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                                
-                            </li>
-                            <!-- End Search -->
-                            
-                            <!-- Cart -->
-                            <li>
-                                <a href="#" class="active"><i class="fa fa-shopping-cart"></i> Cart(1)</a>
-                            </li>
-                            <!-- End Cart -->
-                            
-                            <!-- Languages -->
-                            <li>
-                                <a href="#" class="mn-has-sub">Eng <i class="fa fa-angle-down"></i></a>
-                                
-                                <ul class="mn-sub">
-                                    
-                                    <li><a href="">English</a></li>
-                                    <li><a href="">France</a></li>
-                                    <li><a href="">Germany</a></li>
-                                    
-                                </ul>
-                                
-                            </li>
-                            <!-- End Languages -->
-                            
-                        </ul>
-                    </div>
-                    <!-- End Main Menu -->
-                    
                 </div>
-            </nav>
-            <!-- End Navigation panel -->
-            
-            <main id="main">
-            
-                <!-- Fullwidth Slider -->
-                <div class="home-section fullwidth-slider bg-dark">
-                    
-                    <!-- Slide Item -->
-                    <section class="page-section bg-scroll bg-dark bg-dark-alfa-50" data-background="images/fashion/section-bg-2.jpg">
-                        <div class="relative container">
-                            
-                            <!-- Hero Content -->
-                            <div class="home-content">
-                                <div class="home-text">
-                                    
-                                    <div class="row">
-                                        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                                            
-                                            <div class="row">
-                                                <div class="col-sm-8 offset-sm-2 col-10 offset-1">
-                                                    <a href="shop-columns-2col.html"><img src="images/fashion/summer.png" alt="Summer" /></a>
-                                                </div>
-                                            </div>
-                                            
-                                            <h1 class="hs-line-6 no-transp font-alt">Collection 2016 <a href="shop-columns-2col.html" class="btn btn-mod btn-w btn-round" style="margin-top:-3px;">Shop Now</a></h1>
-                                                
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!-- End Hero Content -->
-                            
+                <div class="item-2 collection-item large hover-img wow fadeInUp">
+                    <div class="collection-inner">
+                        <a href="https://www.etsy.com" class="collection-image img-style rounded-0">
+                            <img src="assets/collection-22.jpg" alt="Wool Blends">
+                        </a>
+                        <div class="collection-content">
+                            <a href="https://www.etsy.com" class="tf-btn collection-title hover-icon"><span>Wool Blend Hats</span></a>
                         </div>
-                    </section>
-                    <!-- End Slide Item -->
-                    
-                    <!-- Slide Item -->
-                    <section class="page-section bg-scroll bg-dark bg-dark-alfa-50" data-background="images/fashion/section-bg-3.jpg">
-                        <div class="relative container">
-                            
-                            <!-- Hero Content -->
-                            <div class="home-content">
-                                <div class="home-text">
-                                    
-                                    <div class="row">
-                                        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                                            
-                                            <div class="row">
-                                                <div class="col-sm-8 offset-sm-2 col-10 offset-1">
-                                                    <a href="shop-columns-2col.html"><img src="images/fashion/autumn.png" alt="Autumn" /></a>
-                                                </div>
-                                            </div>
-                                            
-                                            <h1 class="hs-line-6 no-transp font-alt">Collection 2016 <a href="shop-columns-2col.html" class="btn btn-mod btn-w btn-round" style="margin-top:-3px;">Shop Now</a></h1>
-                                                
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!-- End Hero Content -->
-                            
-                        </div>
-                    </section>
-                    <!-- End Slide Item -->
-                    
-                    <!-- Slide Item -->
-                    <section class="page-section bg-scroll bg-dark bg-dark-alfa-50" data-background="images/fashion/section-bg-1.jpg">
-                        <div class="relative container">
-                            
-                            <!-- Hero Content -->
-                            <div class="home-content">
-                                <div class="home-text">
-                                    
-                                    <div class="row">
-                                        <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                                            
-                                            <div class="row">
-                                                <div class="col-sm-8 offset-sm-2 col-10 offset-1">
-                                                    <a href="shop-columns-2col.html"><img src="images/fashion/spring.png" alt="Spring" /></a>
-                                                </div>
-                                            </div>
-                                            
-                                            <h1 class="hs-line-6 no-transp font-alt">Collection 2016 <a href="shop-columns-2col.html" class="btn btn-mod btn-w btn-round" style="margin-top:-3px;">Shop Now</a></h1>
-                                                
-                                       </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!-- End Hero Content -->
-                            
-                        </div>
-                    </section>
-                    <!-- End Slide Item -->
-                
+                    </div>
                 </div>
-                <!-- End Fullwidth Slider -->
-                
-                
-                <!-- Section -->
-                <section class="page-section bg-dark pt-10 pb-0">
-                    <div class="relative">
-                        
-                        <!-- Grid -->
-                        <ul class="works-grid work-grid-gut work-grid-3 clearfix font-alt hover-white hide-titles" id="work-grid">
-                            
-                            <!-- Item -->
-                            <li class="work-item">
-                                <div class="post-prev-img mb-0">
-                                    <a href="shop-columns-2col.html" class="work-ext-link"><img src="images/fashion/image-1.jpg" alt="" /></a>
-                                </div>
-                            </li>
-                            <!-- End Item -->
-                            
-                            <!-- Item -->
-                            <li class="work-item">
-                                <div class="post-prev-img mb-0">
-                                    <a href="shop-columns-2col.html" class="work-ext-link"><img src="images/fashion/image-2.jpg" alt="" /></a>
-                                </div>
-                            </li>
-                            <!-- End Item -->
-                            
-                            <!-- Item -->
-                            <li class="work-item">
-                                <div class="post-prev-img mb-0">
-                                    <a href="shop-columns-2col.html" class="work-ext-link"><img src="images/fashion/image-3.jpg" alt="" /></a>
-                                </div>
-                            </li>
-                            <!-- End Item -->
-                            
-                        </ul>
-                        <!-- End Grid -->
-                        
+                <div class="item-3 collection-item large hover-img wow fadeInUp">
+                    <div class="collection-inner">
+                        <a href="https://www.etsy.com" class="collection-image img-style rounded-0">
+                            <img src="assets/collection-23.jpg" alt="Recycled Material Hats">
+                        </a>
+                        <div class="collection-content">
+                            <a href="https://www.etsy.com" class="tf-btn collection-title hover-icon"><span>Recycled Material Hats</span></a>
+                        </div>
                     </div>
-                </section>
-                <!-- End Section -->
-                
-                
-                
-                <!-- Section -->
-                <section class="page-section">
-                    <div class="container relative">
-                        
-                        <h2 class="section-title font-alt mb-70 mb-sm-40">
-                            New Products
-                        </h2>
-                        
-                        <div class="row multi-columns-row">
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-1.jpg" alt="" /></a>
-                                    
-                                    <div class="intro-label">
-                                        <span class="badge badge-danger bg-red">Sale</span>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">G-Star Polo Applique Jersey</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <del>$150.00</del>
-                                    &nbsp;
-                                    <strong>$94.75</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-2.jpg" alt="" /></a>
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">Only & Sons Pique Polo Shirt</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <strong>$28.99</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-3.jpg" alt="" /></a>
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">Longline Long Sleeve T-shirt</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <strong>$39.99</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-4.jpg" alt="" /></a>
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">Polo Shirt With Floral Sleeves</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <strong>$85.99</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-5.jpg" alt="" /></a>
-                                    
-                                    <div class="intro-label">
-                                        <span class="badge badge-danger bg-red">Sale</span>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">G-Star Polo Applique Jersey</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <del>$150.00</del>
-                                    &nbsp;
-                                    <strong>$94.75</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-6.jpg" alt="" /></a>
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">Only & Sons Pique Polo Shirt</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <strong>$28.99</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-7.jpg" alt="" /></a>
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">Longline Long Sleeve T-shirt</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <strong>$39.99</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
-                            
-                            <!-- Shop Item -->
-                            <div class="col-md-3 col-lg-3 mb-40">
-                                
-                                <div class="post-prev-img">
-                                    <a href="shop-single.html"><img src="images/shop/shop-prev-8.jpg" alt="" /></a>
-                                </div>
-                                
-                                <div class="post-prev-title font-alt align-center">
-                                    <a href="shop-single.html">Polo Shirt With Floral Sleeves</a>
-                                </div>
-        
-                                <div class="post-prev-text align-center mb-0">
-                                    <strong>$85.99</strong>
-                                </div>
-    
-                                
-                            </div>
-                            <!-- End Shop Item -->
+                </div>
+                <div class="item-4 collection-item large hover-img wow fadeInUp">
+                    <div class="collection-inner">
+                        <a href="https://www.etsy.com" class="collection-image img-style rounded-0">
+                            <img src="assets/collection-24.jpg" alt="Merino Wool Hats">
+                        </a>
+                        <div class="collection-content">
+                            <a href="https://www.etsy.com" class="tf-btn collection-title hover-icon"><span>Merino Wool Hats</span></a>
                         </div>
-                        
-                        <div class="mt-20 align-center">
-                            <a href="" class="btn btn-mod btn-round btn-medium">See More Products</a>
-                        </div>
-                    
                     </div>
-                </section>
-                <!-- End Section -->
-                
-                
-                <!-- Section -->
-                <section class="page-section bg-gray-lighter">
-                    <div class="container relative">
-                        
-                        <h2 class="section-title font-alt mb-70 mb-sm-40">
-                            Looking for something awesome?
-                        </h2>
-                        
-                        <div class="row">
-                            <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                                <div class="section-text align-center mb-70 mb-xs-40">
-                                    Curabitur eu adipiscing lacus, a iaculis diam. Nullam placerat blandit auctor. Nulla accumsan ipsum et nibh rhoncus, eget tempus sapien ultricies. Donec mollis lorem vehicula.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            
-                            <!-- Item -->
-                            <div class="col-sm-4 mb-20 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
-                                
-                                <div class="post-prev-img">
-                                    <a href="#"><img src="images/fashion/image-4.jpg" alt="" /></a>
-                                </div>
-                                
-                            </div>
-                            <!-- End Item -->
-                            
-                            <!-- Item -->
-                            <div class="col-sm-4 mb-20 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-                                
-                                <div class="post-prev-img">
-                                    <a href="#"><img src="images/fashion/image-5.jpg" alt="" /></a>
-                                </div>
-                                
-                            </div>
-                            <!-- End Item -->
-                            
-                            <!-- Item -->
-                            <div class="col-sm-4 mb-20 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-                                
-                                <div class="post-prev-img">
-                                    <a href="#"><img src="images/fashion/image-6.jpg" alt="" /></a>
-                                </div>
-                                
-                            </div>
-                            <!-- End Item -->
-                            
-                        </div>
-                        
-                    </div>
-                </section>
-                <!-- End Section -->
-                
-                
-                <!-- Section -->
-                <section class="page-section">
-                    <div class="container relative">
-                        
-                        <!-- Nav tabs -->
-                        <ul role="tablist" class="nav nav-tabs tpl-tabs animate">
-                            <li class="active">
-                                <a href="#one" class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true">Trendness</a>
-                            </li>
-                            <li>
-                                <a href="#two" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Bestsellers</a>
-                            </li>
-                            <li>
-                                <a href="#three" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Featured</a>
-                            </li>
-                        </ul>
-                        <!-- End Nav tabs -->
-                        
-                        <!-- Tab panes -->
-                        <div class="tab-content tpl-tabs-cont section-text">
-                            <div role="tabpanel" class="tab-pane fade show active" id="one">
-                                
-                                <div class="row">
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-1.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        <del>
-                                                            50.00
-                                                        </del>&nbsp;
-                                                        $25.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-2.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Slim Fit Pique Badge Logo</a>
-                                                    <div>
-                                                        $75.00
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-3.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Esprit Pique Polo Shirt</a>
-                                                    <div>
-                                                        $30.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-4.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        $15.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-2.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Slim Fit Pique Badge Logo</a>
-                                                    <div>
-                                                        $75.00
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-5.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        $15.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="two">
-                            
-                                <div class="row">
-                                
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-2.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Slim Fit Pique Badge Logo</a>
-                                                    <div>
-                                                        $75.00
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-5.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        $15.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-1.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        <del>
-                                                            50.00
-                                                        </del>&nbsp;
-                                                        $25.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-2.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Slim Fit Pique Badge Logo</a>
-                                                    <div>
-                                                        $75.00
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-3.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Esprit Pique Polo Shirt</a>
-                                                    <div>
-                                                        $30.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-4.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        $15.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                               </div>
-                            
-                            </div>
-                            
-                            <div role="tabpanel" class="tab-pane fade" id="three">
-                            
-                                <div class="row">
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-1.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        <del>
-                                                            50.00
-                                                        </del>&nbsp;
-                                                        $25.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-2.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Slim Fit Pique Badge Logo</a>
-                                                    <div>
-                                                        $75.00
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-2.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Slim Fit Pique Badge Logo</a>
-                                                    <div>
-                                                        $75.00
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-5.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        $15.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                    <div class="col-sm-4">
-                                        
-                                        <ul class="clearlist widget-posts">
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-3.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Esprit Pique Polo Shirt</a>
-                                                    <div>
-                                                        $30.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                            <!-- Preview item -->
-                                            <li class="clearfix">
-                                                <a href=""><img src="images/shop/previews/shop-prev-4.jpg" alt="" class="widget-posts-img" /></a>
-                                                <div class="widget-posts-descr">
-                                                    <a href="#" title="">Polo Shirt With Argyle Print</a>
-                                                    <div>
-                                                        $15.99
-                                                    </div>
-                                                    <div>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <!-- End Preview item -->
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            
-                            </div>
-                        </div>
-                        <!-- End Tab panes -->
-                        
-                    </div>
-                </section>
-                <!-- End Section -->
-                
-                <!-- Divider -->
-                <hr class="mt-0 mb-0 "/>
-                <!-- End Divider -->
-                
-                
-                <!-- Section -->
-                <section class="page-section">
-                    <div class="container relative">
-                        
-                        <!-- Features Grid -->
-                        <div class="row alt-features-grid">
-                            
-                            <!-- Text Item -->
-                            <div class="col-md-3">
-                                <div class="alt-features-item align-center">
-                                    <div class="alt-features-descr align-left">
-                                        <h4 class="mt-0 font-alt">How we work?</h4>
-                                        Lorem ipsum dolor sit amet, c-r adipiscing elit. 
-                                        In maximus ligula semper metus pellentesque mattis. 
-                                        Maecenas  volutpat, diam enim.
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Text Item -->
-                            
-                            <!-- Features Item -->
-                            <div class="col-md-3">
-                                <div class="alt-features-item align-center">
-                                    <div class="alt-features-icon">
-                                        <span class="icon-chat"></span>
-                                    </div>
-                                    <h3 class="alt-features-title font-alt">Support 24/7</h3>
-                                </div>
-                            </div>
-                            <!-- End Features Item -->
-                            
-                            <!-- Features Item -->
-                            <div class="col-md-3">
-                                <div class="alt-features-item align-center">
-                                    <div class="alt-features-icon">
-                                        <span class="icon-wallet"></span>
-                                    </div>
-                                    <h3 class="alt-features-title font-alt">100% Money Back</h3>
-                                </div>
-                            </div>
-                            <!-- End Features Item -->
-                            
-                            <!-- Features Item -->
-                            <div class="col-md-3">
-                                <div class="alt-features-item align-center">
-                                    <div class="alt-features-icon">
-                                        <span class="icon-hotairballoon"></span>
-                                    </div>
-                                    <h3 class="alt-features-title font-alt">Worldwide Shipping</h3>
-                                </div>
-                            </div>
-                            <!-- End Features Item -->
-                            
-                       </div>
-                       <!-- End Features Grid -->
-                        
-                    </div>
-                </section>
-                <!-- End Section -->
-                
-                
-                <!-- Newsletter Section -->
-                <section class="small-section bg-dark-lighter">
-                    <div class="container relative">
-                        
-                        <form class="form align-center" id="mailchimp">
-                            <div class="row">
-                                <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                                    
-                                    <div class="newsletter-label font-alt">
-                                        Stay informed with our newsletter
-                                    </div>
-                                    
-                                    <div class="mb-20">
-                                        <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required aria-required="true">
-                                        
-                                        <button type="submit" class="btn btn-mod btn-w btn-medium btn-round mb-xs-10">
-                                            Subscribe
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="form-tip">
-                                        <i class="fa fa-info-circle"></i> Please trust us, we will never send you spam
-                                    </div>
-                                    
-                                    <div id="subscribe-result" role="region" aria-live="polite" aria-atomic="true"></div>
-                                    
-                                </div>
-                            </div>
-                        </form>
-                        
-                    </div>
-                </section>
-                <!-- End Newsletter Section -->
-            
-            </main>
-            
-            <!-- Foter -->
-            <footer class="small-section bg-gray-lighter footer pb-60">
-                <div class="container">
-                    
-                    <!-- Footer Widgets -->
-                    <div class="row align-left">
-                        
-                        <!-- Widget -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                
-                                <h5 class="widget-title font-alt">About</h5>
-                                
-                                <div class="widget-body">
-                                    <div class="widget-text clearfix">
-                                        
-                                        <p>
-                                            Curabitur eu adipiscing lacus, ipsum et nibh rhoncus, eget tempus sapien ultricies.
-                                        </p>
-                                        
-                                        <address>
-                                            <strong>Rhythm, Inc.</strong>
-                                            <br>
-                                            1355 Market Street, Suite 900
-                                            <br>
-                                            San Francisco, CA 94103
-                                            <br>
-                                            <abbr title="Phone">
-                                                P:
-                                            </abbr>
-                                            (123) 456-7890
-                                        </address>
-
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>                            
-                        </div>
-                        <!-- End Widget -->
-                        
-                        <!-- Widget -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                
-                                <h5 class="widget-title font-alt">How Can We Help?</h5>
-                                
-                                <div class="widget-body">
-                                    <ul class="clearlist widget-menu">
-                                        <li>
-                                            <a href="#" title="">Delivery <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Returns <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Frequently Asked Questions <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Size Guides <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Store Locator <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
-                            </div>                          
-                        </div>
-                        <!-- End Widget -->
-                        
-                        <!-- Widget -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                
-                                <h5 class="widget-title font-alt">Useful Information</h5>
-                                
-                                <div class="widget-body">
-                                    <ul class="clearlist widget-menu">
-                                        <li>
-                                            <a href="#" title="">About Us <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Careers <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Privacy Policy <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" title="">Contact <i class="fa fa-angle-right right"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                
-                            </div>                          
-                        </div>
-                        <!-- End Widget -->
-                        
-                        <!-- Widget -->
-                        <div class="col-sm-6 col-md-3">
-                            <div class="widget">
-                                
-                                <h5 class="widget-title font-alt">Social Media</h5>
-                                
-                                <div class="widget-body">
-                                    <div class="widget-text clearfix">
-                                        
-                                        <p>
-                                            Cras mattis est eget lacus dignissim, non consectetur velit pellentesque.
-                                        </p>
-                                        
-                                        <!-- Social Links -->
-                                        <div class="footer-social-links">
-                                            <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                                            <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                                            <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                                            <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                        </div>
-                                        <!-- End Social Links -->
-                                    
-                                    </div>
-                                </div>
-                                
-                            </div>                            
-                        </div>
-                        <!-- End Widget -->
-                        
-                    </div>
-                    <!-- End Footer Widgets -->
-                    
-                    <!-- Divider -->
-                    <hr class="mt-0 mb-60 mb-xs-40"/>
-                    <!-- End Divider -->
-                    
-                    <!-- Footer Text -->
-                    <div class="footer-text">
-                        
-                        <!-- Copyright -->
-                        <div class="footer-copy font-alt">
-                            <a href="http://themeforest.net/user/theme-guru/portfolio" target="_blank">© Rhythm 2023</a>.
-                        </div>
-                        <!-- End Copyright -->
-                        
-                        <div class="footer-made">
-                            Made with love for great people.
-                        </div>
-                        
-                    </div>
-                    <!-- End Footer Text --> 
-                    
-                 </div>
-                 
-                 
-                 <!-- Top Link -->
-                 <div class="local-scroll">
-                     <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i><span class="sr-only">Scroll to top</span></a>
-                 </div>
-                 <!-- End Top Link -->
-                 
-            </footer>
-            <!-- End Foter -->
-            
-            
-            <!-- Buy Button -->
-            <a href="//1.envato.market/0Jj5XL" target="_blank" class="buy-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Buy</span></a>
-            <!-- End Buy Button -->
-        
-        
+                </div>
+            </div>
         </div>
-        <!-- End Page Wrap -->
-        
-        
-        <!-- JS -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>        
-        <script type="text/javascript" src="js/SmoothScroll.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
-        <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/morphext.js"></script>
-        <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
-        <script type="text/javascript" src="js/all.js"></script>
-        <script type="text/javascript" src="js/contact-form.js"></script>
-        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>        
-        <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-        
-    </body>
+    </section>
+
+    <!-- Contact Section (2 columns) -->
+    <section id="contact" class="flat-spacing-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2>Say Hello</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 contact-left" style="padding: 20px;">
+                    <p style="font-size: 1.6em; line-height: 1.6; padding-bottom: 40px;">We'd love to hear from you! Whether you have questions about our sustainable hats, need help with your order, or just want to say hi, our team is here to help.</p>
+<div class="contact-social mt-3">
+    <a href="#" target="_blank" aria-label="Etsy" class="fa fa-etsy"></a>
+    <a href="#" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
+    <a href="#" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
+</div>
+
+
+                </div>
+                <div class="col-md-6 contact-right">
+                    <form action="#" method="post" class="mt-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="tf-btn btn-fill animate-hover-btn btn-xl radius-3"><span>Send Message</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer md-pb-70">
+        <div class="footer-wrap">
+            <div class="footer-body">
+                <div class="container">
+                    <div class="footer-custom-row">
+                        <div class="footer-col">
+                            <a href="#home">
+                                <img src="assets/logo.svg" alt="Sunkhari Logo" style="margin-bottom:20px;">
+                            </a>
+                        </div>
+                        <div class="footer-col">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#shop">Shop</a></li>
+                                <li><a href="#contact">Say Hello</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col footer-sales">
+                            <h6>Sustainable Materials</h6>
+                            <p>Our hats are crafted from merino wool, wool blends, recycled materials, and organic cotton, ensuring quality and eco-conscious fashion choices.</p>
+                        </div>
+                        <div class="footer-col footer-sales">
+                            <h6>Embrace Slow Fashion</h6>
+                            <p>By choosing Sunkhari, you support slow fashion, reduce waste, and embrace a more conscious, sustainable lifestyle.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-center" style="padding-top: 40px;">
+                        © 2024 Sunkhari Store. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- gotop -->
+<div class="progress-wrap" onclick="window.scrollTo({top:0,behavior:'smooth'});">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102" style="position:absolute;top:0;left:0;opacity:0;">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear;stroke:#fff;stroke-width:4;fill:none;"></path>
+    </svg>
+    ↑
+</div>
+<!-- /gotop -->
+
+<!-- Mobile Menu -->
+<div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
+    <span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+    <div class="mb-canvas-content">
+        <div class="mb-body">
+            <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+                <li class="nav-mb-item"><a href="#home">Home</a></li>
+                <li class="nav-mb-item"><a href="#about">About</a></li>
+                <li class="nav-mb-item"><a href="#shop">Shop</a></li>
+                <li class="nav-mb-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>       
+</div>
+<!-- /Mobile Menu -->
+
+<script type="text/javascript" src="assets/jquery.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="assets/lazysize.min.js"></script>
+<script type="text/javascript" src="assets/wow.min.js"></script>
+<script type="text/javascript" src="assets/carousel.js"></script>
+<script type="text/javascript" src="assets/main.js"></script>
+
+<script>
+    // Initialize WOW for animations
+    new WOW().init();
+</script>
+</body>
 </html>
